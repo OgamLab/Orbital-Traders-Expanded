@@ -9,9 +9,9 @@
     <graphicData>
       <texPath>Wrecks/CormorantWreck</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(4,5)</drawSize>
+      <drawSize>(4,7)</drawSize>
     </graphicData>
-    <size>(4,5)</size>
+    <size>(4,7)</size>
     <fillPercent>0.5</fillPercent>
     <castEdgeShadows>false</castEdgeShadows>
     <passability>PassThroughOnly</passability>

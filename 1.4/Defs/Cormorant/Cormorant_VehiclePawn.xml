@@ -10,7 +10,7 @@
 		<graphicData>
 			<texPath>Cormorant/Cormorant</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<drawSize>(4,5)</drawSize>
+			<drawSize>(4,7)</drawSize>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<color>(72, 77, 72)</color>
 			<colorTwo>(56, 55, 50)</colorTwo>
@@ -21,7 +21,7 @@
 		
 		<buildDef>Cormorant_Blueprint</buildDef>
 
-		<size>(4,5)</size>
+		<size>(4,7)</size>
 		
 		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
 		<canCaravan LockSetting = "True">false</canCaravan>
