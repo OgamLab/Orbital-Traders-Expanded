@@ -9,17 +9,18 @@
   <description>
   </description>
   <modDependencies>
-    <li>
-      <packageId></packageId>
-      <displayName></displayName>
-      <downloadUrl></downloadUrl>
-      <steamWorkshopUrl></steamWorkshopUrl>
-    </li>
-	<li>
-		<packageId></packageId>
-		<displayName></displayName>
-		<steamWorkshopUrl></steamWorkshopUrl>
-	</li>
+		<li>
+			<packageId>SmashPhil.VehicleFramework</packageId>
+			<displayName>Vehicle Framework</displayName>
+			<downloadUrl>https://github.com/SmashPhil/Vehicles/releases/latest</downloadUrl>
+			<steamWorkshopUrl/>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaVehiclesExpanded</packageId>
+			<displayName>Vanilla Vehicles Expanded</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3014906877</downloadUrl>
+			<steamWorkshopUrl/>
+		</li>
   </modDependencies>
   <loadAfter>
 	

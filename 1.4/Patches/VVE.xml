@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_AllMaps_VehicleWrecks"]/thingDefs</xpath>
+		<value>
+			<CormorantWreck>1</CormorantWreck>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_DirtPath_VehicleWrecks"]/thingDefs</xpath>
+		<value>
+			<CormorantWreck>1</CormorantWreck>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_DirtRoad_VehicleWrecks"]/thingDefs</xpath>
+		<value>
+			<CormorantWreck>1</CormorantWreck>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_StoneRoad_VehicleWrecks"]/thingDefs</xpath>
+		<value>
+			<CormorantWreck>1</CormorantWreck>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_AncientAsphaltRoad_VehicleWrecks"]/thingDefs</xpath>
+		<value>
+			<CormorantWreck>1</CormorantWreck>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_AncientAsphaltHighway_VehicleWrecks"]/thingDefs</xpath>
+		<value>
+			<CormorantWreck>1</CormorantWreck>
+		</value>
+	</Operation>
+
+</Patch>
