@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>Hernstein_Blueprint</defName>
+		<label>Hernstein</label>
+		<description>text.todo</description>
+		<graphicData>
+			<texPath>Hernstein/Hernstein</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,9)</drawSize>
+		</graphicData>
+	
+		<size>(4,9)</size>
+		
+		<statBases>
+			<WorkToBuild>90000</WorkToBuild>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+
+		<costList>
+			<VVE_EngineBlock>12</VVE_EngineBlock>
+			<VVE_CarAlternator>24</VVE_CarAlternator>
+			<VVE_CarExhaust>16</VVE_CarExhaust>
+			<VVE_CarSuspension>12</VVE_CarSuspension>
+			<VVE_CarWheel>4</VVE_CarWheel>
+			<Steel>1200</Steel>
+			<Plasteel>400</Plasteel>
+			<ComponentIndustrial>36</ComponentIndustrial>
+			<VVE_CarFuelTank>8</VVE_CarFuelTank>
+			<VVE_CarTransmission>12</VVE_CarTransmission>
+			<VVE_CarRadiator>4</VVE_CarRadiator>
+			<VVE_CarWiring>12</VVE_CarWiring>
+			<VVE_CarBattery>8</VVE_CarBattery>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<thingToSpawn>Hernstein</thingToSpawn>
+	</Vehicles.VehicleBuildDef>
+</Defs>

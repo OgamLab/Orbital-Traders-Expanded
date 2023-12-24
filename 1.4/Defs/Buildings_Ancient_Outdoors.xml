@@ -30,6 +30,64 @@
 		</li>
 	</comps>
   </ThingDef>
-  
 
+  <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
+    <defName>HernsteinWreck</defName>
+    <label>medium cargo ship wreck</label>
+    <description>text.todo.</description>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Wrecks/HernsteinWreck</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,9)</drawSize>
+    </graphicData>
+    <size>(4,9)</size>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>6000</MaxHitPoints>
+	  <Flammability>0</Flammability>
+    </statBases>
+    <killedLeavings>
+      <ChunkSlagSteel>16</ChunkSlagSteel>
+    </killedLeavings>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>Hernstein</vehicleDef>
+			<spawnRotation>East</spawnRotation>
+		</li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
+    <defName>AnaanWreck</defName>
+    <label>large cargo ship wreck</label>
+    <description>text.todo.</description>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Wrecks/AnaanWreck</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,11)</drawSize>
+    </graphicData>
+    <size>(4,11)</size>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>6000</MaxHitPoints>
+	  <Flammability>0</Flammability>
+    </statBases>
+    <killedLeavings>
+      <ChunkSlagSteel>16</ChunkSlagSteel>
+    </killedLeavings>
+	<comps>
+		<li Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
+			<vehicleDef>Anaan</vehicleDef>
+			<spawnRotation>East</spawnRotation>
+		</li>
+	</comps>
+  </ThingDef>
 </Defs>

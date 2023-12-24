@@ -5,6 +5,8 @@
 		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_AllMaps_VehicleWrecks"]/thingDefs</xpath>
 		<value>
 			<CormorantWreck>1</CormorantWreck>
+			<HernsteinWreck>1</HernsteinWreck>
+			<AnaanWreck>1</AnaanWreck>
 		</value>
 	</Operation>
 	
@@ -12,6 +14,8 @@
 		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_DirtPath_VehicleWrecks"]/thingDefs</xpath>
 		<value>
 			<CormorantWreck>1</CormorantWreck>
+			<HernsteinWreck>1</HernsteinWreck>
+			<AnaanWreck>1</AnaanWreck>
 		</value>
 	</Operation>
 
@@ -19,6 +23,8 @@
 		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_DirtRoad_VehicleWrecks"]/thingDefs</xpath>
 		<value>
 			<CormorantWreck>1</CormorantWreck>
+			<HernsteinWreck>1</HernsteinWreck>
+			<AnaanWreck>1</AnaanWreck>
 		</value>
 	</Operation>
 
@@ -26,6 +32,8 @@
 		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_StoneRoad_VehicleWrecks"]/thingDefs</xpath>
 		<value>
 			<CormorantWreck>1</CormorantWreck>
+			<HernsteinWreck>1</HernsteinWreck>
+			<AnaanWreck>1</AnaanWreck>
 		</value>
 	</Operation>
 
@@ -33,6 +41,8 @@
 		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_AncientAsphaltRoad_VehicleWrecks"]/thingDefs</xpath>
 		<value>
 			<CormorantWreck>1</CormorantWreck>
+			<HernsteinWreck>1</HernsteinWreck>
+			<AnaanWreck>1</AnaanWreck>
 		</value>
 	</Operation>
 	
@@ -40,6 +50,8 @@
 		<xpath>/Defs/VFECore.ObjectSpawnsDef[defName="VVE_AncientAsphaltHighway_VehicleWrecks"]/thingDefs</xpath>
 		<value>
 			<CormorantWreck>1</CormorantWreck>
+			<HernsteinWreck>1</HernsteinWreck>
+			<AnaanWreck>1</AnaanWreck>
 		</value>
 	</Operation>
 
