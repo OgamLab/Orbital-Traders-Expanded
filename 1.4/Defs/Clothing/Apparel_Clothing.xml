@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Corporation Formal Suit -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>OTE_Corporation_Formal_Suit</defName>
+    <label>corporation formal suit</label>
+    <description>...</description>
+    <possessionCount>1</possessionCount>
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>210</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Apparel/FormalSuit/???</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <costStuffCount>70</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>1.7</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>      <!-- No clue what social and thinking stat was reffered, added some to be tweaked or removed-->
+      <NegotiationAbility>0.1</NegotiationAbility>
+      <TradePriceImprovement>0.05</TradePriceImprovement>
+      <SocialImpact>0.2</SocialImpact>
+      <ResearchSpeed>0.1</ResearchSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/FormalSuit/???</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>CorporationFormalSuit</li>
+      </tags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <tradeTags>
+      <li>OTE_Corporation</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Corporation Coif -->
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>OTE_Corporation_Coif</defName>
+    <label>corporation coif</label>
+    <description>...</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Apparel/Coif/???</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <!-- Add metallic stuff -->
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1.4</Mass>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Coif/???</wornGraphicPath>
+      <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>CorporationCoif</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>OTE_Corporation</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Corporation Underwear -->
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>OTE_Corporation_Underwear</defName>
+    <label>corporation underwear</label>
+    <description>...</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Apparel/Underwear/???</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <!-- Add metallic stuff -->
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.4</Mass>
+      <Insulation_Cold>8</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Underwear/???</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>CorporationUnderwear</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>OTE_Corporation</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Corporation Gambeson -->
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>OTE_Corporation_Gambeson</defName>
+    <label>corporation gambeson</label>
+    <description>...</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Apparel/Gambeson/???</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.4</Mass>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.15</ArmorRating_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Gambeson/???</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>CorporationGambeson</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>OTE_Corporation</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- Corporation Cap -->
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>OTE_Corporation_Cap</defName>
+    <label>corporation cap</label>
+    <description>...</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Apparel/Cap/???</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1.4</Mass>
+      <Insulation_Cold>2</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Cap/???</wornGraphicPath>
+      <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>CorporationCap</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>OTE_Corporation</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>

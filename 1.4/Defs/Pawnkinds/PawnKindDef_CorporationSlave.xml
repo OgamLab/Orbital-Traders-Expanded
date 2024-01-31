@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Manager -->
+    <PawnKindDef ParentName="OTE_BasePawn">
+        <defName>OTE_Corporation_Slave</defName>
+        <label>corporation slave</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Offworld</li>                    <!-- Make backstories -->
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <apparelRequired>
+            <li>OTE_Corporation_Gambeson</li>
+            <li>OTE_Corporation_Cap</li>
+        </apparelRequired>
+        <combatPower>30</combatPower>
+    </PawnKindDef>
+
+</Defs>

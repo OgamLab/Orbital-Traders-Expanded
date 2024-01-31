@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>OTE_Galactic_Trader_Corporation</defName>
+        <label>galactic trader corporation</label>
+        <description>...</description>
+        <pawnSingular>Corporate goon</pawnSingular>
+        <pawnsPlural>Corporate goons</pawnsPlural>
+        <fixedLeaderKinds>
+            <li>OTE_Corporation_Executive_Director</li>
+        </fixedLeaderKinds>
+        <hidden>true</hidden>
+        <fixedName>galactic trader corporation</fixedName>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <allowedArrivalTemperatureRange>-10~65</allowedArrivalTemperatureRange>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>100</configurationListOrderPriority>
+        <canSiege>false</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <permanentEnemy>false</permanentEnemy>
+        <leaderTitle>Executive Director</leaderTitle>
+        <techLevel>Spacer</techLevel>
+        <factionNameMaker>OTE_FactionNamer</factionNameMaker>
+        <settlementNameMaker>OTE_SettlementNamer</settlementNameMaker>
+        <factionIconPath>Icons/GTC_Icon</factionIconPath>
+        <settlementTexturePath>Icons/GTC_Icon</settlementTexturePath>
+        <backstoryFilters>
+            <li>
+                <categoriesAdulthood>
+                    <li>Offworld</li>                    <!-- Change -->
+                </categoriesAdulthood>
+            </li>
+        </backstoryFilters>
+        <earliestRaidDays>45</earliestRaidDays>
+        <autoFlee>true</autoFlee>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 1)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(400, 150)</li>
+                <li>(1000, 250)</li>
+                <li>(2000, 500)</li>
+                <li>(5000, 1200)</li>
+                <li>(10000, 2000)</li>
+                <li>(100000, 5000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <OTE_Corporation_Space_Marine>3</OTE_Corporation_Space_Marine>
+                    <OTE_Corporation_Slave>1</OTE_Corporation_Slave>
+                </options>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <OTE_Corporation_Space_Marine>4</OTE_Corporation_Space_Marine>
+                    <OTE_Corporation_Slave>1</OTE_Corporation_Slave>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <OTE_Corporation_Manager>1</OTE_Corporation_Manager >
+                </traders>
+                <carriers>
+                    <OTE_Corporation_Slave>1</OTE_Corporation_Slave>
+                </carriers>
+                <guards>
+                    <OTE_Corporation_Space_Marine>1</OTE_Corporation_Space_Marine>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <OTE_Corporation_Space_Marine>20</OTE_Corporation_Space_Marine>
+                    <OTE_Corporation_Slave>8</OTE_Corporation_Slave>
+                    <OTE_Corporation_Manager>1</OTE_Corporation_Manager>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <!-- Traders -->
+        <caravanTraderKinds>
+            <li>OTE_MiningDepartment</li>
+            <li>OTE_MilitaryDepartment</li>
+            <li>OTE_MedicalDepartment</li>
+            <li>OTE_ProductionDepartment</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>OTE_MiningDepartment</li>
+            <li>OTE_MilitaryDepartment</li>
+            <li>OTE_MedicalDepartment</li>
+            <li>OTE_ProductionDepartment</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>OTE_MiningDepartment</li>
+            <li>OTE_MilitaryDepartment</li>
+            <li>OTE_MedicalDepartment</li>
+            <li>OTE_ProductionDepartment</li>
+        </baseTraderKinds>
+        <disallowedRaidAgeRestrictions>
+            <li>Children</li>
+        </disallowedRaidAgeRestrictions>
+    </FactionDef>
+
+
+    <!-- Name of Imperium Faction -->
+    <RulePackDef>
+        <defName>OTE_FactionNamer</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->galactic trader corporation</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Name of Imperium settlements -->
+    <RulePackDef>
+        <defName>OTE_SettlementNamer</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Trader Outpost [Letters]</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>Letters</keyword>
+                    <path>NameBanks/OTE_SettlementName</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

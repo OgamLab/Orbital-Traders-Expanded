@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelArmorPowerBase">
+    <defName>OTE_Corporation_Marine_Armor</defName>
+    <label>corporation marine armor</label>
+    <description>...</description>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/PowerArmor/???</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>65000</WorkToMake>
+      <Mass>8</Mass>
+      <Flammability>0.1</Flammability>
+      <ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.95</ArmorRating_Heat>
+    </statBases>
+    <apparel Inherit="False">
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/PowerArmor/???</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <tags>
+        <li>CorporatePowerArmor</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>OTE_Corporation</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="OrbitalTradersExpanded.DefModExtension_HideBody" />
+      <!-- Make appropriate code to make it disable body, but not head -->
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

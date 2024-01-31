@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Space Marine -->
+    <PawnKindDef ParentName="OTE_BasePawn">
+        <defName>OTE_Corporation_Space_Marine</defName>
+        <label>corporation space marine</label>
+        <initialWillRange>15~30</initialWillRange>
+        <initialResistanceRange>15~30</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Offworld</li>                    <!-- Make backstories -->
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <apparelRequired>
+            <li>OTE_Corporation_Underwear</li>
+            <li>OTE_Corporation_Marine_Armor</li>
+        </apparelRequired>
+        <weaponTags>
+            <li>CorporationStandardRifle</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+        <combatPower>150</combatPower>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>7~14</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>7~14</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+</Defs>
