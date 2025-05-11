@@ -7,7 +7,7 @@
     <description>Allows radio contact with other factions and orbital traders. Comes with a built-in lightweight deep mineral scanner.</description>
     <thingClass>Building_CommsConsole</thingClass>
     <graphicData>
-      <texPath>Things/Building/Misc/CommsConsole</texPath>
+      <texPath>TSE/Buildings/Console/Console</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,1.5)</drawSize>
       <damageData>
