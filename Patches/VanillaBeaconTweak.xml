@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="OrbitalTradeBeacon"]/placeWorkers</xpath>
+		<value>		
+			<placeWorkers>
+				<li>TraderShipsExpanded.PlaceWorker_ShowCustomTradeBeaconRadius</li>
+			</placeWorkers>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="OrbitalTradeBeacon"]/label</xpath>
+		<value>		
+			<label>small orbital trade beacon</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="OrbitalTradeBeacon"]/uiOrder</xpath>
+		<value>		
+			<uiOrder>2222</uiOrder>
+		</value>
+	</Operation>
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="OrbitalTradeBeacon"]/building</xpath>
+		<value>		
+			<isEdifice>true</isEdifice>
+		</value>
+	</Operation>
+	-->
+</Patch>

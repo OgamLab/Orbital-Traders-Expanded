@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ship chunks, resource pods, pawn pods -->
+  <IncidentDef>
+    <defName>TSE_CargoShipCrash</defName>
+    <label>cargo ship crash</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>TraderShipsExpanded.IncidentWorker_CargoShipCrash</workerClass>
+    <category>Misc</category>
+    <baseChance>0.8</baseChance>
+    <populationEffect>IncreaseHard</populationEffect> <!-- change this if it's actually not that hard to recruit them -->
+	<modExtensions>
+		<li Class="TraderShipsExpanded.ModExt_TSEIncidentExtension">
+			<factionDef>TSE_Faction_GTC</factionDef>
+			<shipChunkCountRange>2~4</shipChunkCountRange>
+			<itemPodsCountRange>2~5</itemPodsCountRange>
+			<pawnPodsCountRange>0~2</pawnPodsCountRange>
+			<podOpenDelay>60</podOpenDelay>
+			<stackValueLimit>800</stackValueLimit> <!-- no 22 adv.components from the sky for you -->
+			<letterString>TSE_CargoShipCrash</letterString>
+		</li>
+	</modExtensions>
+  </IncidentDef>
+  
+  <!-- same but rare with more stuff -->
+  <IncidentDef>
+    <defName>TSE_CargoShipCrashRare</defName>
+    <label>large cargo ship crash</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>TraderShipsExpanded.IncidentWorker_CargoShipCrash</workerClass>
+    <category>Misc</category>
+    <baseChance>0.2</baseChance>
+    <populationEffect>IncreaseHard</populationEffect> <!-- change this if it's actually not that hard to recruit them -->
+	<modExtensions>
+		<li Class="TraderShipsExpanded.ModExt_TSEIncidentExtension">
+			<factionDef>TSE_Faction_GTC</factionDef>
+			<shipChunkCountRange>4~8</shipChunkCountRange>
+			<itemPodsCountRange>6~10</itemPodsCountRange>
+			<pawnPodsCountRange>1~4</pawnPodsCountRange>
+			<podOpenDelay>60</podOpenDelay>
+			<stackValueLimit>1000</stackValueLimit>
+			<letterString>TSE_CargoShipCrashRare</letterString>
+		</li>
+	</modExtensions>
+  </IncidentDef>
+  
+</Defs>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Orbital Traders Expanded</name>
+  <author>Ogam, Flangopink, Taranchuk</author>
+  <packageId>ogam.traderexpanded</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>
+  </description>
+  <modDependencies>
+		<li>
+			<packageId>SmashPhil.VehicleFramework</packageId>
+			<displayName>Vehicle Framework</displayName>
+			<downloadUrl>https://github.com/SmashPhil/Vehicles/releases/latest</downloadUrl>
+			<steamWorkshopUrl/>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaVehiclesExpanded</packageId>
+			<displayName>Vanilla Vehicles Expanded</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3014906877</downloadUrl>
+			<steamWorkshopUrl/>
+		</li>
+  </modDependencies>
+  <loadAfter>
+	
+  </loadAfter>
+</ModMetaData>

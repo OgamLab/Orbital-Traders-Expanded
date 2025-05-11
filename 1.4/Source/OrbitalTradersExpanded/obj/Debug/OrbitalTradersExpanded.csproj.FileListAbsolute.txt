@@ -1,4 +1,0 @@
-C:\Steam\steamapps\common\RimWorld\Mods\Orbital-Traders-Expanded\1.4\Assemblies\OrbitalTradersExpanded.dll
-C:\Steam\steamapps\common\RimWorld\Mods\Orbital-Traders-Expanded\1.4\Source\OrbitalTradersExpanded\obj\Debug\OrbitalTradersExpanded.csproj.AssemblyReference.cache
-C:\Steam\steamapps\common\RimWorld\Mods\Orbital-Traders-Expanded\1.4\Source\OrbitalTradersExpanded\obj\Debug\OrbitalTradersExpanded.csproj.CoreCompileInputs.cache
-C:\Steam\steamapps\common\RimWorld\Mods\Orbital-Traders-Expanded\1.4\Source\OrbitalTradersExpanded\obj\Debug\OrbitalTradersExpanded.dll

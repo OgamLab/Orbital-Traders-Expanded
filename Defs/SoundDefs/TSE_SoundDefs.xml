@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <SoundDef>
+    <defName>TSE_Sound_TraderShipLanding</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>4</maxSimultaneous>
+    
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TSE/Land</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>25~25</volumeRange>
+        <pitchRange>0.93~1.07</pitchRange>
+        <muteWhenPaused>True</muteWhenPaused>
+      </li>
+    </subSounds>
+    
+    <priorityMode>PrioritizeNearest</priorityMode>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>TSE_Sound_TraderShipTakeoff</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>4</maxSimultaneous>
+    
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TSE/Takeoff</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>25~25</volumeRange>
+        <pitchRange>0.93~1.07</pitchRange>
+        <muteWhenPaused>True</muteWhenPaused>
+      </li>
+    </subSounds>
+    
+    <priorityMode>PrioritizeNearest</priorityMode>
+  </SoundDef>
+  
+  
+
+  <SoundDef>
+    <defName>TSE_Sound_TraderShipThud</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>4</maxSimultaneous>
+    
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TSE/Thud</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>25~25</volumeRange>
+        <pitchRange>0.93~1.07</pitchRange>
+        <muteWhenPaused>True</muteWhenPaused>
+      </li>
+    </subSounds>
+    
+    <priorityMode>PrioritizeNearest</priorityMode>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>TSE_VehicleEngineRocket</defName>
+    <sustain>true</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TSE/RocketSustainer</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>1.2~1.25</pitchRange>
+        <volumeRange>70~75</volumeRange>
+        <sustainAttack>2.5</sustainAttack>      
+        <sustainRelease>2.5</sustainRelease>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>
