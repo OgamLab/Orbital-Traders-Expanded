@@ -10,7 +10,7 @@
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<packageId>Grimforge_team.OrbitalTradersExpanded</packageId>
+	<packageId>GrimForgeTeam.OrbitalTradersExpanded</packageId>
 	<modIconPath IgnoreIfNoMatchingField="True">TSE/UI/Icons/ModIcon</modIconPath>
 	<description>description</description> <!-- TODO: Edit -->
     <modDependencies>
