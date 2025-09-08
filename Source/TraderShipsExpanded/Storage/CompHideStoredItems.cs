@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
+using Verse.Noise;
 
 namespace TraderShipsExpanded
 {
@@ -16,9 +17,9 @@ namespace TraderShipsExpanded
             if (!TSE_Cache.storageCache.ContainsKey(parent)) 
                 TSE_Cache.storageCache.Add(parent, showItems);
         }
-        public override void PostDeSpawn(Map map)
+        public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
-            base.PostDeSpawn(map);
+            base.PostDestroy(mode, previousMap);
             TSE_Cache.storageCache.Remove(parent);
         }
 
