@@ -77,7 +77,7 @@ namespace TraderShipsExpanded
             Pawn pawn = PawnGenerator.GeneratePawn(Utils.GetRandomShipPersonnelPawnKind(Utils.GetTraderPawnGroupMaker(TargetFaction.def)), TargetFaction);
             if (pawn.equipment?.Primary != null) pawn.equipment.DestroyEquipment(pawn.equipment.Primary);
             HealthUtility.DamageUntilDowned(pawn);
-            ActiveDropPodInfo activeDropPodInfo = new()
+            ActiveTransporterInfo activeDropPodInfo = new()
             {
                 openDelay = Ext.podOpenDelay,
                 leaveSlag = true,
@@ -120,7 +120,7 @@ namespace TraderShipsExpanded
 
         private bool TryFindShipChunkDropCell(IntVec3 nearLoc, Map map, int maxDist, out IntVec3 pos)
         {
-            return CellFinderLoose.TryFindSkyfallerCell(ThingDefOf.ShipChunkIncoming, map, out pos, 10, nearLoc, maxDist);
+            return CellFinderLoose.TryFindSkyfallerCell(ThingDefOf.ShipChunkIncoming, map, null, out pos, nearLoc: nearLoc, nearLocMaxDist: maxDist);
         }
     }
 }

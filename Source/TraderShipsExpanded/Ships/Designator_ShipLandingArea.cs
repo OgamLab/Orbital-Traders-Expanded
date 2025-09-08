@@ -8,7 +8,7 @@ namespace TraderShipsExpanded
     {
         private readonly DesignateMode mode;
 
-        public override int DraggableDimensions => 2;
+        //public override int DraggableDimensions => 2;
 
         public override bool DragDrawMeasurements => true;
 
