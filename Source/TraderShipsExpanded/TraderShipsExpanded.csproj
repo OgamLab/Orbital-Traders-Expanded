@@ -104,6 +104,8 @@
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.4.1</Version>
+			<IncludeAssets>compile</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
