@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>TSE_AdvCommsConsole</defName>
-    <label>advanced omms console</label>
+    <label>advanced сomms console</label>
     <description>Allows radio contact with other factions and orbital traders. Comes with a built-in lightweight deep mineral scanner.</description>
     <thingClass>Building_CommsConsole</thingClass>
     <graphicData>
