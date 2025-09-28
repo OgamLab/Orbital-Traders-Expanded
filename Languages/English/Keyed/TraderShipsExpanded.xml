@@ -59,6 +59,6 @@
 	<!-- Incident -->
 	<TSE_CargoShipCrash>Cargo ship debris</TSE_CargoShipCrash>
 	<TSE_CargoShipCrashRare>Large cargo ship debris</TSE_CargoShipCrashRare>
-	<TSE_CargoShipCrashDescription>Debris of a destroyed orbital cargo ship have landed near the colony. There may be some valuable goods and surviving ship personnel present.</TSE_CargoShipCrashDescription>
+	<TSE_CargoShipCrashDesc>Debris of a destroyed orbital cargo ship have landed near the colony. There may be some valuable goods and surviving ship personnel present.</TSE_CargoShipCrashDesc>
 	
 </LanguageData>
