@@ -35,6 +35,7 @@ namespace TraderShipsExpanded
             Map map = (Map)parms.target;
             if (!TryFindShipChunkDropCell(map.Center, map, 999999, out IntVec3 intVec))
             {
+                Log.Error($"Cannot find a place for incident");
                 return false;
             }
 
@@ -120,7 +121,7 @@ namespace TraderShipsExpanded
 
         private bool TryFindShipChunkDropCell(IntVec3 nearLoc, Map map, int maxDist, out IntVec3 pos)
         {
-            return CellFinderLoose.TryFindSkyfallerCell(ThingDefOf.ShipChunkIncoming, map, null, out pos, nearLoc: nearLoc, nearLocMaxDist: maxDist);
+            return CellFinderLoose.TryFindSkyfallerCell(ThingDefOf.ShipChunkIncoming, map, TerrainAffordanceDefOf.Light, out pos, nearLoc: nearLoc, nearLocMaxDist: maxDist);
         }
     }
 }
