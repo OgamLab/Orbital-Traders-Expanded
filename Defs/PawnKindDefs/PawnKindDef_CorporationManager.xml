@@ -5,6 +5,7 @@
     <PawnKindDef ParentName="TSE_BasePawn">
         <defName>TSE_Corporation_Manager</defName>
         <label>corporation manager</label>
+			<trader>true</trader>
         <apparelRequired>
             <li>TSE_Corp_Suit</li>
         </apparelRequired>

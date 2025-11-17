@@ -108,18 +108,19 @@
                     <TSE_Corporation_Slave>1</TSE_Corporation_Slave>
                 </options>
             </li>
-            <li>
-                <kindDef>Trader</kindDef>
-                <traders>
-                    <TSE_Corporation_Manager>1</TSE_Corporation_Manager>
-                </traders>
-                <carriers>
-                    <TSE_Corporation_Slave>1</TSE_Corporation_Slave>
-                </carriers>
-                <guards>
-                    <TSE_Corporation_Space_Marine>2</TSE_Corporation_Space_Marine>
-                </guards>
-            </li>
+					<li>
+						<kindDef>Trader</kindDef>
+						<traders>
+							<TSE_Corporation_Manager>1</TSE_Corporation_Manager>
+						</traders>
+						<carriers>
+							<Muffalo>6</Muffalo>
+							<Elephant>1</Elephant>
+						</carriers>
+						<guards>
+							<TSE_Corporation_Space_Marine>2</TSE_Corporation_Space_Marine>
+						</guards>
+					</li>
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
