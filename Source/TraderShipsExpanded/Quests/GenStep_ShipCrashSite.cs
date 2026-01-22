@@ -8,20 +8,50 @@ namespace TraderShipsExpanded
     public class GenStep_ShipCrashSite : GenStep
     {
         public override int SeedPart => 69696901;
-
+        public static bool CanPlaceAt(Thing thing, Map map, IntVec3 pos)
+        {
+            foreach (var cell in GenAdj.OccupiedRect(pos, Rot4.North, thing.def.Size).ExpandedBy(1))
+            {
+                if (!cell.InBounds(map))
+                {
+                    return false;
+                }
+                if (!cell.Walkable(map))
+                {
+                    return false;
+                }
+                if (cell.Roofed(map))
+                {
+                    return false;
+                }
+                if (cell.Fogged(map))
+                {
+                    return false;
+                }
+                if (cell.GetEdifice(map) != null)
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
         public override void Generate(Map map, GenStepParams parms)
         {
             IntVec3 shipPos = IntVec3.Invalid;
             List<Thing> things = Utils.GetRandomTraderStock(TSE_DefOf.TSE_Faction_GTC);
 
             int num = 2;
-            while (shipPos == IntVec3.Invalid)
+            Thing wreck = ThingMaker.MakeThing(Utils.GetRandomShipWreckDef());
+            while (!CellFinder.TryFindRandomCellNear(map.Center, map, num, (IntVec3 c) => CanPlaceAt(wreck, map, c), out shipPos))
             {
-                CellFinder.TryFindRandomCellNear(map.Center, map, num, (IntVec3 c) => c.Walkable(map) && !c.Roofed(map) && !map.fogGrid.IsFogged(c), out shipPos);
                 num++;
+                if (num > 120)
+                {
+                    Log.Error("Failed to spawn wrecked ship");
+                    return;
+                }
             }
 
-            Thing wreck = ThingMaker.MakeThing(Utils.GetRandomShipWreckDef());
             wreck.SetFactionDirect(map.ParentFaction);
             wreck.HitPoints = (int)(wreck.MaxHitPoints * Rand.Range(0.25f, 0.75f));
             GenSpawn.Spawn(wreck, shipPos, map);
