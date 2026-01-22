@@ -16,7 +16,11 @@ namespace TraderShipsExpanded
 
         public override void Generate(Map map, GenStepParams parms)
         {
-            var pirates = Find.FactionManager.OfPirates;
+            if (!Find.FactionManager.TryGetRandomNonColonyHumanlikeFaction(out var pirates, true, requireHostile: true))
+            {
+                Log.Error("Failed to find hostile faction");
+                return;
+            }
             ship = map.spawnedThings.FirstOrDefault(x => Utils.AllShipWrecks.Contains(x.def) || Utils.AllShipDefs.Contains(x.def));
             IntVec3 shipSpot = map.Center;//ship != null ? ship.Position : map.Center;
 
@@ -59,10 +63,9 @@ namespace TraderShipsExpanded
             {
                 return true;
             }*/
-            if (!RCellFinder.TryFindEdgeCellFromThingAvoidingColony(ship, map, Predicate, out spawnSpot))
+            if (ship == null || !RCellFinder.TryFindEdgeCellFromThingAvoidingColony(ship, map, Predicate, out spawnSpot))
             {
                 CellFinder.TryFindRandomEdgeCellWith((IntVec3 p) => !map.roofGrid.Roofed(p) && p.Walkable(map), map, CellFinder.EdgeRoadChance_Hostile, out spawnSpot);
-                
             }
             if (!spawnSpot.IsValid && !RCellFinder.TryFindRandomPawnEntryCell(out spawnSpot, map, CellFinder.EdgeRoadChance_Hostile))
             {
