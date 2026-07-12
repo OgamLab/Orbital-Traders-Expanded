@@ -33,7 +33,7 @@ namespace TraderShipsExpanded
                     return false;
                 }
             }
-            return false;
+            return true;
         }
         public override void Generate(Map map, GenStepParams parms)
         {
