@@ -269,5 +269,32 @@ namespace TraderShipsExpanded
             }
             return true;
         }
+        public static bool CanPlaceAt(Thing thing, Map map, IntVec3 pos)
+        {
+            foreach (var cell in GenAdj.OccupiedRect(pos, Rot4.North, thing.def.Size).ExpandedBy(1))
+            {
+                if (!cell.InBounds(map))
+                {
+                    return false;
+                }
+                if (!cell.Walkable(map))
+                {
+                    return false;
+                }
+                if (cell.Roofed(map))
+                {
+                    return false;
+                }
+                if (cell.Fogged(map))
+                {
+                    return false;
+                }
+                if (cell.GetEdifice(map) != null)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }

@@ -8,33 +8,7 @@ namespace TraderShipsExpanded
     public class GenStep_ShipCrashSite : GenStep
     {
         public override int SeedPart => 69696901;
-        public static bool CanPlaceAt(Thing thing, Map map, IntVec3 pos)
-        {
-            foreach (var cell in GenAdj.OccupiedRect(pos, Rot4.North, thing.def.Size).ExpandedBy(1))
-            {
-                if (!cell.InBounds(map))
-                {
-                    return false;
-                }
-                if (!cell.Walkable(map))
-                {
-                    return false;
-                }
-                if (cell.Roofed(map))
-                {
-                    return false;
-                }
-                if (cell.Fogged(map))
-                {
-                    return false;
-                }
-                if (cell.GetEdifice(map) != null)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
+
         public override void Generate(Map map, GenStepParams parms)
         {
             IntVec3 shipPos = IntVec3.Invalid;
@@ -42,7 +16,7 @@ namespace TraderShipsExpanded
 
             int num = 2;
             Thing wreck = ThingMaker.MakeThing(Utils.GetRandomShipWreckDef());
-            while (!CellFinder.TryFindRandomCellNear(map.Center, map, num, (IntVec3 c) => CanPlaceAt(wreck, map, c), out shipPos))
+            while (!CellFinder.TryFindRandomCellNear(map.Center, map, num, (IntVec3 c) => Utils.CanPlaceAt(wreck, map, c), out shipPos))
             {
                 num++;
                 if (num > 120)
