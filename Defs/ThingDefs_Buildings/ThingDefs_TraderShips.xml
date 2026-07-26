@@ -29,7 +29,7 @@
       <ComponentSpacer>1</ComponentSpacer>
     </killedLeavings>
     <altitudeLayer>Building</altitudeLayer>
-    <fillPercent>1.0</fillPercent>
+    <fillPercent>0.9</fillPercent>
     <tickerType>Normal</tickerType>
 	
     <hasInteractionCell>true</hasInteractionCell>
