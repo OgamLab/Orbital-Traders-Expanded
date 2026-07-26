@@ -19,14 +19,13 @@ namespace TraderShipsExpanded
 
             IntVec3 shipPos = IntVec3.Invalid;
 
+            Thing ship = ThingMaker.MakeThing(Utils.GetRandomShipDef());
             int num = 2;
-            while (shipPos == IntVec3.Invalid)
+            while (!CellFinder.TryFindRandomCellNear(map.Center, map, num, (IntVec3 c) => Utils.CanPlaceAt(ship, map, c), out shipPos))
             {
-                CellFinder.TryFindRandomCellNear(map.Center, map, num, (IntVec3 c) => c.Walkable(map) && !c.Roofed(map) && !map.fogGrid.IsFogged(c), out shipPos);
                 num++;
             }
 
-            Thing ship = ThingMaker.MakeThing(Utils.GetRandomShipDef());
 
             Faction faction = askerPawn.Faction;
             ship.SetFactionDirect(faction);
