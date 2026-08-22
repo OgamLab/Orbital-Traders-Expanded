@@ -7,7 +7,7 @@
     <label>corporation cap</label>
     <description>...</description>
     <graphicData>
-      <texPath>TSE/Apparel/Cap/_item</texPath>
+      <texPath>TSE/Apparel/Cap/Cap_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stuffCategories>

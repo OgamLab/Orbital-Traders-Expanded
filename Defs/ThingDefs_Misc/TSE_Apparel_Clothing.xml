@@ -7,7 +7,7 @@
     <label>corporation formal suit</label>
     <description>...</description>
     <graphicData>
-      <texPath>TSE/Apparel/Costume/_item</texPath>
+      <texPath>TSE/Apparel/Costume/Costume_Male_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.85</drawSize>
     </graphicData>

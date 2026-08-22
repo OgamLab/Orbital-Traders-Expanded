@@ -6,7 +6,7 @@
     <defName>TSE_EnableTransparency_Helmet</defName>
     <wornGraphicPath>TSE/Apparel/Helmet/Helmet</wornGraphicPath>
     <graphicData>
-      <texPath>TSE/Apparel/Helmet/_item</texPath>
+      <texPath>TSE/Apparel/Helmet/Helmet_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>Transparent</shaderType>
     </graphicData>

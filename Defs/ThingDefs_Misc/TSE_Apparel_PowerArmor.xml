@@ -6,7 +6,7 @@
     <label>corporation marine armor</label>
     <description>...</description>
     <graphicData>
-      <texPath>TSE/Apparel/Armor/_item</texPath>
+      <texPath>TSE/Apparel/Armor/Armor_Male_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<apparel>
@@ -38,7 +38,7 @@
     <label>corporation marine helmet</label>
     <description>...</description>
     <graphicData>
-      <texPath>TSE/Apparel/Helmet/_item</texPath>
+      <texPath>TSE/Apparel/Helmet/Helmet_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>Transparent</shaderType>
     </graphicData>
