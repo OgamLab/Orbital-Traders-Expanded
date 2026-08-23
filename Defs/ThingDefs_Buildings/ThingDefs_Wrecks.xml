@@ -172,36 +172,6 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="TSE_WreckBase">
-		<defName>TSE_Wreck_Tortoise</defName>
-		<label>galactic cargo ship wreck</label>
-		<description>...</description>
-		<graphicData>
-		  <texPath>TSE/Ships/Tortoise/Tortoise_wreck</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <shadowData>
-			<volume>(13, 1, 7)</volume>
-			<offset>(0, 0, -1)</offset>
-		  </shadowData>
-		  <drawSize>(17,11)</drawSize>
-		</graphicData>
-		<size>(17,9)</size>
-		<killedLeavingsRanges>
-		  <ChunkSlagSteel>12~16</ChunkSlagSteel>
-		  <Steel>60~100</Steel>
-		  <Plasteel>80~120</Plasteel>
-		  <ComponentIndustrial>6~12</ComponentIndustrial>
-		  <ComponentSpacer>2~3</ComponentSpacer>
-		</killedLeavingsRanges>
-		<comps>
-			<li MayRequire="OskarPotocki.VanillaVehiclesExpanded" 
-			    Class="VanillaVehiclesExpanded.CompProperties_VehicleWreck">
-				<vehicleDef>TSE_Vehicle_Tortoise</vehicleDef>
-				<spawnRotation>East</spawnRotation>
-			</li>
-		</comps>
-	</ThingDef>
 	
 	<ThingDef ParentName="TSE_WreckBase">
 		<defName>TSE_Wreck_TortoiseNew</defName>

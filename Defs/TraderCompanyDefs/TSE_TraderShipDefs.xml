@@ -35,7 +35,6 @@
 		<iconColor>(255,100,255)</iconColor>
 		<factionDef>TSE_Faction_GTC</factionDef>
 		<shipThingDefs>
-			<li>TSE_TraderShip_Tortoise</li> <!-- ADD THE SHIP THINGIE -->
 			<li>TSE_TraderShip_TortoiseNew</li>
 			<li>TSE_TraderShip_Cargo</li>
 			<!--

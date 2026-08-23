@@ -149,22 +149,6 @@
     <interactionCellOffset>(2,0,-4)</interactionCellOffset>
   </ThingDef>
   
-  <!-- T4 - Tortoise -->
-  <ThingDef ParentName="TraderShipBuildingBase">
-    <defName>TSE_TraderShip_Tortoise</defName>
-    <graphicData>
-      <texPath>TSE/Ships/Tortoise/Tortoise</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-      <shadowData>
-        <volume>(13, 1, 7)</volume>
-        <offset>(0, 0, -1)</offset>
-      </shadowData>
-	  <drawSize>(17,11)</drawSize>
-    </graphicData>
-    <size>(17,9)</size>
-    <interactionCellOffset>(-3,0,-5)</interactionCellOffset>
-  </ThingDef>
   
   <!-- T4.2 - New Tortoise -->
   <ThingDef ParentName="TraderShipBuildingBase">

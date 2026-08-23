@@ -39,6 +39,6 @@
 		</costList>
 		
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-		<thingToSpawn>TSE_Vehicle_Tortoise</thingToSpawn>
+		<thingToSpawn>TSE_Vehicle_TortoiseNew</thingToSpawn>
 	</Vehicles.VehicleBuildDef>
 </Defs>
