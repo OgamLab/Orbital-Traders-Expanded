@@ -430,6 +430,7 @@
 		
 		<comps>
 			<li Class="Vehicles.CompProperties_VehicleLauncher">
+				<spaceFlight>true</spaceFlight>
 				<launchProtocol Class="Vehicles.PropellerTakeoff">
 					<launchProperties Class = "Vehicles.PropellerProtocolProperties">
 						<maxTicks>400</maxTicks>
