@@ -39,6 +39,7 @@
         <li>Legs</li>
       </bodyPartGroups>
       <wornGraphicPath>TSE/Apparel/Costume/Costume</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
       <layers>
         <li>Middle</li>
         <li>OnSkin</li>
