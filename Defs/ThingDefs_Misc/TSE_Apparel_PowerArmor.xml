@@ -11,6 +11,7 @@
     </graphicData>
 	<apparel>
       <wornGraphicPath>TSE/Apparel/Armor/Armor</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 	  <tags>
 		<li>EVA</li> <!-- make it a viable "spacesuit" for rimnauts -->
 	  </tags>
@@ -44,6 +45,7 @@
     </graphicData>
     <apparel>
       <wornGraphicPath>TSE/Apparel/Helmet/Helmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
       <tags>
 		<li>EVA</li> <!-- make it a viable "spacesuit" for rimnauts -->
       </tags>
@@ -85,6 +87,7 @@
     </graphicData>
     <apparel>
       <wornGraphicPath>TSE/Apparel/Helmet/Bubble/HelmetBubble</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
       <tags>
 		<li>EVA</li> <!-- make it a viable "spacesuit" for rimnauts -->
       </tags>

@@ -28,6 +28,7 @@
         <li>UpperHead</li>
       </bodyPartGroups>
       <wornGraphicPath>TSE/Apparel/Cap/Cap</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
       <!--<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>--> <!-- outdated! throws errors in 1.5 -->
       <layers>
         <li>Overhead</li>
