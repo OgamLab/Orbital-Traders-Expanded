@@ -14,6 +14,7 @@ namespace TraderShipsExpanded
         public int podOpenDelay = 60;
         public float stackValueLimit = 800;
         public string letterString = "TSE_CargoShipCrash";
+        public List<ThingDef> wreckToSpawn = new List<ThingDef>();
     }
 
     public class IncidentWorker_CargoShipCrash : IncidentWorker
@@ -104,7 +105,7 @@ namespace TraderShipsExpanded
 
         private void SpawnShipChunks(IntVec3 firstChunkPos, Map map, int count)
         {
-            SpawnChunk(firstChunkPos, map);
+            SpawnChunk(firstChunkPos, map, Ext.wreckToSpawn.RandomElement(), null);
             for (int i = 0; i < count - 1; i++)
             {
                 if (TryFindShipChunkDropCell(firstChunkPos, map, 10, out var pos))
@@ -113,10 +114,20 @@ namespace TraderShipsExpanded
                 }
             }
         }
-
         private void SpawnChunk(IntVec3 pos, Map map)
         {
-            SkyfallerMaker.SpawnSkyfaller(ThingDefOf.ShipChunkIncoming, ThingDefOf.ShipChunk, pos, map);
+            SpawnChunk(pos, map, ThingDefOf.ShipChunkIncoming, ThingDefOf.ShipChunk);
+        }
+        private void SpawnChunk(IntVec3 pos, Map map, ThingDef skyfaller, ThingDef innerThing)
+        {
+            if (innerThing != null)
+            {
+                SkyfallerMaker.SpawnSkyfaller(skyfaller, innerThing, pos, map);
+            }
+            else
+            {
+                SkyfallerMaker.SpawnSkyfaller(skyfaller, pos, map);
+            }
         }
 
         private bool TryFindShipChunkDropCell(IntVec3 nearLoc, Map map, int maxDist, out IntVec3 pos)

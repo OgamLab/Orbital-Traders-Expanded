@@ -20,6 +20,10 @@
 			<podOpenDelay>60</podOpenDelay>
 			<stackValueLimit>800</stackValueLimit> <!-- no 22 adv.components from the sky for you -->
 			<letterString>TSE_CargoShipCrash</letterString>
+			<wreckToSpawn>
+				<li>TSE_Wreck_CargoIncoming</li>
+				<li>TSE_Wreck_CutlassIncoming</li>
+			</wreckToSpawn>
 		</li>
 	</modExtensions>
   </IncidentDef>
@@ -44,6 +48,12 @@
 			<podOpenDelay>60</podOpenDelay>
 			<stackValueLimit>1000</stackValueLimit>
 			<letterString>TSE_CargoShipCrashRare</letterString>
+			<wreckToSpawn>
+				<li>TSE_Wreck_TortoiseNewIncoming</li>
+				<li>TSE_Wreck_MuleIncoming</li>
+				<li>TSE_Wreck_MaceIncoming</li>
+				<li>TSE_Wreck_SwordfishIncoming</li>
+			</wreckToSpawn>
 		</li>
 	</modExtensions>
   </IncidentDef>

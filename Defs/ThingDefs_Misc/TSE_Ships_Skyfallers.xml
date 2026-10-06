@@ -114,4 +114,129 @@
 	  <li><compClass>CompColorable</compClass></li>
 	</comps>
   </ThingDef>
+
+
+
+
+	<ThingDef ParentName="ShipChunkIncomingBase">
+		<defName>TSE_Wreck_CutlassIncoming</defName>
+		<label>transport ship wreck (Incoming)</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>TSE/Ships/Cutlass/Cutlass_wreck</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(6, 1, 2)</volume>
+				<offset>(0, 0, -0.5)</offset>
+			</shadowData>
+			<drawSize>(7,4)</drawSize>
+		</graphicData>
+		<size>(7,3)</size>
+		<skyfaller>
+			<spawnThing>CraterMedium</spawnThing>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef ParentName="ShipChunkIncomingBase">
+		<defName>TSE_Wreck_CargoIncoming</defName>
+		<label>cargo ship wreck (Incoming)</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>TSE/Ships/Cargo/Cargo_wreck</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(7, 1, 2)</volume>
+				<offset>(0, 0, -1)</offset>
+			</shadowData>
+			<drawSize>(11,5)</drawSize>
+		</graphicData>
+		<size>(11,4)</size>
+		<skyfaller>
+			<spawnThing>TSE_Wreck_Cutlass</spawnThing>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef ParentName="ShipChunkIncomingBase">
+		<defName>TSE_Wreck_SwordfishIncoming</defName>
+		<label>long ship wreck (Incoming)</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>TSE/Ships/Swordfish/Swordfish_wreck</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(6, 1, 2)</volume>
+				<offset>(-1, 0, 0)</offset>
+			</shadowData>
+			<drawSize>(13,6)</drawSize>
+		</graphicData>
+		<size>(13,5)</size>
+		<skyfaller>
+			<spawnThing>TSE_Wreck_Swordfish</spawnThing>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef ParentName="ShipChunkIncomingBase">
+		<defName>TSE_Wreck_MaceIncoming</defName>
+		<label>medium ship wreck (Incoming)</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>TSE/Ships/Mace/Mace_wreck</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(8, 1, 4)</volume>
+				<offset>(-0.6, 0, -0.4)</offset>
+			</shadowData>
+			<drawSize>(15,7)</drawSize>
+			<drawOffset>(0,0,0.6)</drawOffset>
+		</graphicData>
+		<size>(13,5)</size>
+		<skyfaller>
+			<spawnThing>TSE_Wreck_Mace</spawnThing>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef ParentName="ShipChunkIncomingBase">
+		<defName>TSE_Wreck_MuleIncoming</defName>
+		<label>large ship wreck (Incoming)</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>TSE/Ships/Mule/Mule_wreck</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(9, 1, 5)</volume>
+				<offset>(0, 0, -1)</offset>
+			</shadowData>
+			<drawSize>(14,9)</drawSize>
+		</graphicData>
+		<size>(14,7)</size>
+		<skyfaller>
+			<spawnThing>TSE_Wreck_Mule</spawnThing>
+		</skyfaller>
+	</ThingDef>
+
+
+	<ThingDef ParentName="ShipChunkIncomingBase">
+		<defName>TSE_Wreck_TortoiseNewIncoming</defName>
+		<label>large galactic cargo ship wreck (Incoming)</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>TSE/Ships/TortoiseNew/Tortoise_wreck</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(19, 1, 10)</volume>
+				<offset>(0, 0, -1)</offset>
+			</shadowData>
+			<drawSize>(24,14)</drawSize>
+		</graphicData>
+		<size>(23,12)</size>
+		<skyfaller>
+			<spawnThing>TSE_Wreck_TortoiseNew</spawnThing>
+		</skyfaller>
+	</ThingDef>
 </Defs>
